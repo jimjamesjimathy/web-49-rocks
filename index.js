@@ -5,10 +5,10 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-app.listen(port, () => {
-    console.log(`listening on port ${port}`)
-});
-
 app.get('/', (req, res) => {
     res.json('<h1>Howdy</h1>')
+});
+
+app.listen(port, () => {
+    console.log(`listening on port ${port}`)
 });
