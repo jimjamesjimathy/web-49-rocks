@@ -10,5 +10,5 @@ app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.json(`<h1>Howdy</h1>`)
+    res.json('<h1>Howdy</h1>')
 });
