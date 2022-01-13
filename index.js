@@ -1,6 +1,11 @@
+const express = require('express');
+const app = express();
+const port = 5000
 
-if(process.argv[2] === 'web-49') {
-    console.log('farts')
-} else {
-    console.log('else statement')
-}
+app.listen(port, () => {
+    console.log(`listening on port ${port}`)
+});
+
+app.get('/', (req, res) => {
+    res.json(`<h1>Howdy</h1>`)
+});
